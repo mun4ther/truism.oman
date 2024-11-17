@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oman Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation Menu -->
+    <header>
+        <div class="logo">
+            <img src="webite-images\logo.jpg" alt="header logo">
+        </div><br><br>
+        <div class="additional-text">
+            <strong>Oman Tourism</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="animation active" href="index.html">Home</a></li>
+                <li><a class="animation" href="about.html">About</a></li>
+                <li><a class="animation" href="places.html">Places</a></li>
+                <li><a class="animation" href="travel.html">Travel </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <section class="achievements-section">
+            <div class="audio-easter-egg">
+                <img id="playFootball" src="webite-images/World.jpg" alt="Visi Travel" class="clickable-image"> <p id="p_id">Click the image to see our tourism songs</p>
+                <audio controls id="easterEggAudio" style="display: none;">
+                    <source src="oman-tourism-editing.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div><br>
+            <h2>Travel Guidence</h2>
+
+            <!-- La Liga Titles -->
+            <div class="achievement">
+                <h3>Desert Conqueror Challenge</h3>
+                 <p>A thrilling race to conquer sand dunes held every February in Bidiya, Sharqiyah Region.</p>
+            </div>
+            </div>
+
+            <!-- UEFA Champions League Titles -->
+            <div class="achievement">
+                <h3>Oman Rally Extravaganza</h3>
+                <p>The Oman International Rally, a key event in the Middle East Rally Championship, takes place annually in March.</p>
+            </div>
+
+            <!-- Copa del Rey Titles -->
+            <div class="achievement">
+                <h3>Oman Endurance Quest</h3>
+                <p>A challenging five-day endurance race held every November, where participants rely on their own food, water, and supplies.</p>
+            </div>
+
+            <!-- FIFA Club World Cup Titles -->
+            <div class="achievement">
+                <h3>Sinbad's Deep Sea Challenge</h3>
+                <p>An exciting international deep-sea fishing contest.</p>
+            </div>
+            <div class="achievement">
+                <h3>Muscat Sailing Regatta</h3>
+                <p>The Dubai–Muscat regatta takes place each January, with boats setting sail from Dubai, passing through the Straits of Hormuz, and reaching Muscat's Bandar Al-Rawdah Marina.</p>
+            </div>
+
+            <div class="achievement">
+                <h3>Royal Racing Spectacle</h3>
+                <p>From September to June, equestrian races organized by the Oman Equestrian Federation are held in various towns. Events are held at the royal stables in Seeb and across towns in the Al Kamil/Al Wafi region.</p>
+            </div>
+
+            <!-- Add more achievements as needed -->
+
+<br>
+            <!-- Audio Easter Egg (Hidden) -->
+
+<script>
+    // When the football image is clicked, play the audio
+    document.getElementById('playFootball').addEventListener('click', function() {
+        document.getElementById('easterEggAudio').style.display = 'block';
+        document.getElementById('playFootball').style.display = 'none';
+        document.getElementById('p_id').style.display = 'none';
+        document.getElementById('easterEggAudio').play();
+    });
+</script>
+
+
+
+
+
+
+
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Oman Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>

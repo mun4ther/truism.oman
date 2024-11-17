@@ -1,0 +1,325 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rest of your CSS styles remain the same */
+
+header {
+    background-color: #fff;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* To push the logo to the left and the nav to the right */
+    align-items: center;
+    padding: 40px;
+    height: 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.additional-text {
+    font-size: 32px;
+    color: #d30b0b; /* adjust the color as needed */
+    margin-top: 5px; /* adjust the margin from the logo */
+    padding-left: 10px;
+}
+
+nav {
+    /* Add margin-left to push the nav to the right */
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d30b0b;;
+    padding: 30px;
+    font-weight: 700;
+
+}
+nav a.animation:focus,
+nav a.animation:hover {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    background-color: #d30b0b;
+    border-radius: 20px;
+}
+nav a.active {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    background-color: #d30b0b;
+    border-radius: 20px;
+}
+
+/* Rest of your CSS styles remain the same */
+
+main section {
+    text-align: center;
+
+}
+
+main img {
+    max-width: 100%;
+    width: 100%;
+    height: 450px;
+    margin-top: 5px;
+}
+/* Add styles for the image slider */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    max-width: 100%;
+    width: 100%;
+    height: 450px;
+    margin-top: 5px;
+}
+
+/* Additional styles for controlling the slider */
+
+/* Add this CSS to style the "discover-section" */
+.discover-section {
+    background-color: #fff; /* Set the background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.discover-section h2 {
+    font-size: 28px; /* Set the font size for the section title */
+    color: #d30b0b; /* Set the text color */
+}
+
+.discover-section p {
+    font-size: 20px; /* Set the font size for paragraphs */
+    line-height: 1.5; /* Add some line spacing for readability */
+    color: #555; /* Set the text color */
+    margin: 10px 0; /* Add some vertical spacing between paragraphs */
+    text-align: left;
+}
+
+.discover-section ul {
+    list-style-type: disc; /* Use bullet points for the list */
+    margin-left: 100px; /* Add some left margin for the list */
+    color: #555; /* Set the text color */
+}
+
+.discover-section li {
+    font-size: 16px; /* Set the font size for list items */
+    line-height: 1.5; /* Add line spacing for readability */
+    color: #555; /* Set the text color */
+    text-align: left;
+}
+
+.about-section {
+    background-color: #fff; /* Set the background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.about-section h2 {
+    font-size: 28px; /* Set the font size for the section title */
+    color: #d30b0b; /* Set the text color */
+}
+.about-section h3 {
+
+    color: #d30b0b; /* Set the text color */
+}
+.about-section p {
+    font-size: 16px; /* Set the font size for paragraphs */
+    line-height: 1.5; /* Add some line spacing for readability */
+    color: #555; /* Set the text color */
+    margin: 10px 0; /* Add some vertical spacing between paragraphs */
+    text-align: center;
+}
+/* Add this CSS to style the "tourism-trade-section" */
+.tourism-trade-section {
+    background-color: #f5f5f5; /* Set the background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.tourism-trade-section h2 {
+    font-size: 28px; /* Set the font size for the section title */
+    color: #d30b0b;; /* Set the text color */
+}
+
+.tourism-trade-section p {
+    font-size: 16px; /* Set the font size for paragraphs */
+    line-height: 1.5; /* Add some line spacing for readability */
+    color: #555; /* Set the text color */
+    margin: 10px 0; /* Add some vertical spacing between paragraphs */
+}
+
+.tourism-trade-section ul {
+    list-style-type: disc; /* Use bullet points for the list */
+    margin-left: 20px; /* Add some left margin for the list */
+    color: #555; /* Set the text color */
+}
+
+.tourism-trade-section li {
+    font-size: 16px; /* Set the font size for list items */
+    line-height: 1.5; /* Add line spacing for readability */
+    color: #d30b0b; /* Set the text color */
+    text-align: left;
+}
+/* Styling for Team Members Page */
+.team-members-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.player-profile,
+.coach-profile {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.player-profile img,
+.coach-profile img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #333;
+}
+/* Add this CSS to style the "images-section" */
+.images-section {
+    padding: 20px; /* Add padding for spacing */
+}
+
+.images-section h2 {
+    font-size: 28px; /* Set the font size for the section title */
+    color: #d30b0b; /* Set the text color */
+}
+
+.images-section p {
+    font-size: 16px; /* Set the font size for paragraphs */
+    line-height: 1.5; /* Add some line spacing for readability */
+    color: #555; /* Set the text color */
+    margin: 10px 0; /* Add some vertical spacing between paragraphs */
+}
+
+.image-gallery {
+    display: flex; /* Create a horizontal row of images */
+    justify-content: space-between; /* Space them evenly */
+    margin-top: 20px; /* Add some spacing between the text and images */
+}
+
+.image-gallery img {
+    max-width: 30%; /* Limit the image width to 30% of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Add this CSS to style the "interactive-features-section" */
+.interactive-features-section {
+    background-color: #f5f5f5; /* Set the background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.interactive-features-section h2 {
+    font-size: 28px; /* Set the font size for the section title */
+    color: #d30b0b;/* Set the text color */
+}
+
+/* Style for the interactive 3D model (adjust as needed) */
+.interactive-3d {
+    /* Add styles for the interactive 3D model container */
+}
+
+/* Style for the interactive map (adjust as needed) */
+.interactive-map {
+    /* Add styles for the interactive map container */
+}
+
+/* Style for the audio clips section */
+.audio-section {
+    margin-top: 20px; /* Add spacing from the previous content */
+}
+
+.audio-section h3 {
+    font-size: 20px; /* Set the font size for the audio section title */
+    color: #d30b0b; /* Set the text color */
+}
+
+.audio-section ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding from the list */
+}
+
+.audio-section li {
+    margin-bottom: 10px; /* Add spacing between audio clips */
+}
+
+/* Style for the audio player controls (adjust as needed) */
+audio {
+    width: 100%; /* Set audio player width to 100% of the container */
+}
+.clickable-image {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+/* styles.css */
+/* Existing styles (if any) */
+
+/* Styling for Achievements Page */
+.achievements-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.achievement {
+    display: inline-block;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.achievement h3 {
+    font-size: 18px;
+}
+
+/* Add more specific styling as needed */
+
+/* Footer styling (if unchanged from previous pages) */
+
+footer {
+    background-color: #d30b0b;
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 0;
+}
+footer p{
+    margin-left: 20px;
+}

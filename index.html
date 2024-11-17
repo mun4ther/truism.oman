@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oman Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Logo and Navigation Menu -->
+    <header>
+        <div class="logo">
+            <img src="webite-images\logo.jpg" alt="header logo">
+        </div><br><br>
+        <div class="additional-text">
+            <strong>Oman Tourism</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="animation active" href="index.html">Home</a></li>
+                <li><a class="animation" href="about.html">About</a></li>
+                <li><a class="animation" href="places.html">Places</a></li>
+                <li><a class="animation" href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<!-- Main Content Section -->
+<main>
+    <section class="image-slider">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="webite-images\home 1.jpg" alt="Welcome to Duqm Port">
+            </div>
+            <div class="slide">
+                <img src="webite-images\home 2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="webite-images\home 3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </section>
+<script>
+    // JavaScript for the automatic image slider
+const slider = document.querySelector('.slider-wrapper');
+const slides = document.querySelectorAll('.slide');
+
+let currentSlide = 0;
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+    updateSliderPosition();
+}
+
+function updateSliderPosition() {
+    const offset = -currentSlide * slides[0].offsetWidth;
+    slider.style.transform = `translateX(${offset}px)`;
+}
+
+setInterval(nextSlide, 2000); // Change slide every 2 seconds
+
+</script>
+    <section class="discover-section">
+        <h2>About Oman Tourism</h2>
+        <p>Oman Tourism invites travelers to experience the country’s breathtaking landscapes and rich cultural heritage. Known for its stunning coastlines, golden deserts, and majestic mountains, Oman offers a perfect mix of relaxation and adventure. From serene beaches ideal for water sports to the sweeping dunes of Wahiba Sands, Oman provides a unique natural setting for every type of traveler.</p>
+        <p>The country’s deep-rooted history and culture can be explored through its ancient forts, traditional souks, and vibrant festivals. The annual Muscat Festival, for example, showcases Omani arts, crafts, and performances, giving visitors a taste of the nation’s traditions. Forts throughout the country, many from the Al-Yarubi era, offer a glimpse into Oman’s past and stand as symbols of its heritage.</p>
+        <p>Oman also caters to adventurers, with opportunities for kitesurfing, snorkeling, desert safaris, and caving. Tourist-friendly visa options allow easy entry for visitors from numerous countries, making it convenient to plan a trip. Oman’s commitment to preserving its natural beauty and cultural sites ensures a memorable and authentic experience for all.</p>
+
+        <h2>Video - Oman Tourism</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VKVW_C8QvW4?si=uO5VltmVND4Db13a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <!-- Add more content as needed -->
+</main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Oman Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
